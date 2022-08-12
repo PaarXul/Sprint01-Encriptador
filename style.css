@@ -60,27 +60,38 @@ footer {
 }
 
 form {
-  margin: 40px 0;
+  margin: 0;
   text-align: center;
 }
 
-form label {
+form label button {
   display: block;
   font-size: 15px;
-  margin: 0 0 15px;
+  margin: 0;
 }
 
 .input-encriptador {
   display: block;
-  margin: 0 0 20px;
-  padding: 10px 25px;
-  width: 50%;
+  margin: 10px 0 10px 10px;
+  width: 90%;
+  background-color: #aaae8e;
+  border-radius: 8px;
 }
-
+.label-encriptador {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin: 25px 0 20px;
+  width: 100%;
+  font-style: italic;
+  color: #3a606e;
+}
 .encriptador {
-  width: 15%;
-  padding: 25px 25px;
-  font-size: 15px;
+  width: 45%;
+  align-items: center;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 12px;
   font-weight: bold;
   color: rgb(255, 255, 255);
   background: #718580;
@@ -98,15 +109,44 @@ form label {
 .Centrador {
   margin: auto;
   width: 50%;
-  padding: 10px;
+  padding: 0px;
 }
-izquierdo {
-  width: 400px;
-  padding: 5px;
-  float: left;
+textarea {
+  width: 350px;
+  height: 40vh;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  resize: vertical;
+  padding: 2.5vh;
 }
-izquierdo {
-  width: 400px;
-  padding: 5px;
-  float: right;
+.izquierdo {
+  display: inline-block;
+  vertical-align: top;
+  align-items: baseline;
+  margin: 0;
+  width: 49%;
+  padding: 1px;
+}
+.derecho {
+  display: inline-block;
+  vertical-align: top;
+  align-items: baseline;
+  margin: 0;
+  width: 49%;
+  padding: 1px;
+}
+
+.input-desencriptar {
+  display: block;
+  margin: 10px 0 10px 10px;
+  width: 90%;
+  background-color: #aaae8e;
+  border-radius: 8px;
+}
+.centro {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  width: 49%;
+  padding: 1px;
 }

@@ -17,7 +17,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Encriptador</a></li>
-          <li><a href="index.html">Juego del Ahorcado Prontamente</a></li>
+          <li><a href="index.html">Juego del Ahorcado</a></li>
           <li><a href="index.html">Sobre mí</a></li>
         </ul>
       </nav>
@@ -25,21 +25,37 @@
   </header>
 
   <main>
-    <div class="caja">
+    <div class="cajas">
       <div class="izquierdo">
         <form>
           <!- comentar esto funciona? -->
-            <label for="inputencriptador">Ingrese Texto a Encriptar</label>
 
-            <textarea cols="50" rows="15" id="mensaje" class="input-encriptador" required></textarea>
-
-            <input type="submit" value="encriptar" class="encriptador">
-
-            <input type="submit" value="desencriptar" class="encriptador">
+            <div>
+              <label for="label-encriptador" class="label-encriptador">Ingrese Texto a Encriptar</label>
+            </div>
+            <div>
+              <textarea cols="40" rows="15" id="mensaje" class="input-encriptador" required></textarea>
+            </div>
+            <div>
+              <div class="izquierdo">
+                <input type="submit" value="encriptar" class="encriptador">
+              </div>
+              <div class="derecho">
+                <input type="submit" value="desencriptar" class="encriptador">
+              </div>
+            </div>
         </form>
       </div>
       <div class="derecho">
-        <h1>Hola</h1>
+        <div>
+          <label for="label-encriptador" class="label-encriptador">Texto encriptado o desencriptado</label>
+        </div>
+        <div>
+          <textarea cols="40" rows="15" id="mensaje" class="input-desencriptar"></textarea>
+        </div>
+        <div class="centro">
+          <input type="submit" value="desencriptar" class="encriptador">
+        </div>
       </div>
     </div>
   </main>
