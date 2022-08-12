@@ -100,3 +100,13 @@ form label {
   width: 50%;
   padding: 10px;
 }
+izquierdo {
+  width: 400px;
+  padding: 5px;
+  float: left;
+}
+izquierdo {
+  width: 400px;
+  padding: 5px;
+  float: right;
+}
