@@ -1,69 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Encriptador Sprint-01</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <title>Challange Encriptador Alura</title>
 </head>
 
 <body>
   <header>
-    <h1 class="encabezado">Encriptador Challange</h1>
-    <div class="navegacion">
-      <nav>
-        <ul>
-          <li><a href="index.html">Encriptador</a></li>
-          <li><a href="index.html">Juego del Ahorcado</a></li>
-          <li><a href="index.html">Sobre mí</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <div class="navegacion">
+        <h1>Challange Encriptador</h1>
+      </div>
+
+    </nav>
   </header>
-
-  <main>
-    <div class="cajas">
-      <div class="izquierdo">
-        <form>
-          <!- comentar esto funciona? -->
-
-            <div>
-              <label for="label-encriptador" class="label-encriptador">Ingrese Texto a Encriptar</label>
-            </div>
-            <div>
-              <textarea cols="40" rows="15" id="mensaje" class="input-encriptador" required></textarea>
-            </div>
-            <div>
-              <div class="izquierdo">
-                <input type="submit" value="encriptar" class="encriptador">
-              </div>
-              <div class="derecho">
-                <input type="submit" value="desencriptar" class="encriptador">
-              </div>
-            </div>
-        </form>
+  <div class="caja">
+    <main>
+      <div class="mod-encriptador">
+        <div>
+          <textarea id="textoIngresado" cols="20" rows="7" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div class="alerta">
+          <span> ingresar letras minúsculas y sin acentos</span>
+        </div>
+        <div class="boton">
+          <button id="encriptar">Encriptar</button>
+          <button id="desencriptar">Desencriptar</button>
+        </div>
       </div>
-      <div class="derecho">
-        <div>
-          <label for="label-encriptador" class="label-encriptador">Texto encriptado o desencriptado</label>
+      <div class="mod-resultado">
+        <div class="cuadro">
+          <div class="cuadroVisto" id="visto">
+            <div class="imagenMunieco">
+
+            </div>
+            <div class="mensajeNoEncontrado">
+              <p>Ningún mensaje fue encontrado</p>
+            </div>
+            <div class="mensajeIngreseTexto">
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+          </div>
+          <div class="cuadroOculto" id="oculto">
+            <textarea id="textoEncriptado" cols="20" rows="10" placeholder="Texto copiado!" readonly=""></textarea>
+            <button id="copiarTexto">Copiar</button>
+          </div>
         </div>
-        <div>
-          <textarea cols="40" rows="15" id="mensaje" class="input-desencriptar"></textarea>
-        </div>
-        <div class="centro">
-          <input type="submit" value="desencriptar" class="encriptador">
-        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <div class="copyright">
+      <div class="footer-div">
+        <p>© Copyright Gian Parra</p>
+      </div>
+      <div class="footer-div">
+        <p>One Next Education Oracle and Alura Latam</p>
       </div>
     </div>
-  </main>
-  <footer>
-    <p class="copyright">&copy Copyright Sprint-01 Challange One Oracle Next Education and Alura Latam</p>
-    <br />
-    <p class="copyright">Made for Gian Parra Alumno de One Oracle Next Education</p>
   </footer>
+  <script src="jsencriptador.js"></script>
 </body>
 
 </html>
