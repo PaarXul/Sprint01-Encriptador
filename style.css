@@ -66,8 +66,8 @@ main {
 
 .alerta {
   width: auto;
-  height: 2em;
-  margin: 4em 0 0 0;
+  height: 4em;
+  margin: 1em 0 0 0;
   font-size: 12px;
   font-weight: bold;
 }
