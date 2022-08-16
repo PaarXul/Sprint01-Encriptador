@@ -6,7 +6,7 @@ const desencriptarTexto = document.querySelector("#Desencriptar");
 const copiarTexto = document.querySelector("#copias");
 
 function encriptar() {
-  let textoEntrada = input.value;
+  let textoEntrada = input.value.toLowerCase();
   let nuevoTexto = "";
   for (let i = 0; i < textoEntrada.length; i++) {
     switch (textoEntrada[i]) {
@@ -36,7 +36,7 @@ function encriptar() {
 }
 
 function desencriptar() {
-  let textoEntrada = input.value;
+  let textoEntrada = input.value.toLowerCase();
 
   if (textoEntrada.includes("ai", 0)) {
     textoEntrada = textoEntrada.replaceAll("ai", "a");
