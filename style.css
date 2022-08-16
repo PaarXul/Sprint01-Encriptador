@@ -40,10 +40,16 @@ main {
   vertical-align: top;
   margin: 0;
   height: 550px;
-  width: 55%;
+  width: 50%;
 }
 
-#textoIngresado {
+#advertencia {
+  color: #000000;
+  font-size: 25px;
+}
+
+#texto {
+  width: 100%;
   resize: none;
   outline: none;
   color: #000000;
@@ -53,7 +59,7 @@ main {
   font-family: "Verdana", sans-serif;
 }
 
-#textoIngresado::placeholder {
+#texto::placeholder {
   color: #000000;
   font-family: "Verdana", sans-serif;
 }
@@ -70,7 +76,7 @@ span {
 }
 
 button {
-  width: 328px;
+  width: 160px;
   height: 67px;
   margin: 1em 0 0 0;
   font-size: 16px;
@@ -82,30 +88,29 @@ button {
   transition: 500ms;
 }
 
-#encriptar:hover {
+#Encriptar:hover {
   color: #6a2e35;
   background: #cccccc;
   border-radius: 24px;
 }
 
-#desencriptar:hover {
+#Desencriptar:hover {
   color: #6a2e35;
   background: #cccccc;
   border-radius: 24px;
 }
 
-#copiarTexto:hover {
+.copiarTextoBtn:hover {
   color: #6a2e35;
   background: #cccccc;
   border-radius: 24px;
 }
 
 .mod-resultado {
+  margin-top: 15px;
   display: inline-block;
   vertical-align: top;
-  margin: 0;
   height: 550px;
-  width: 43%;
 }
 
 .cuadro {
@@ -122,17 +127,12 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.cuadroVisto {
+.mensaje {
   display: block;
 }
 
 .cuadroOculto {
   display: none;
-}
-
-.imagenMunieco img {
-  width: 80%;
-  margin-top: 1em;
 }
 
 .mensajeNoEncontrado p {
@@ -146,7 +146,7 @@ button {
   margin-top: 1em;
 }
 
-#textoEncriptado {
+.textoEncriptado {
   resize: none;
   outline: none;
   color: #000000;
@@ -195,7 +195,7 @@ footer {
     width: 100%;
   }
 
-  #textoIngresado {
+  #texto {
     width: 80%;
   }
 
@@ -204,12 +204,12 @@ footer {
     margin-left: 10%;
   }
 
-  #encriptar {
+  #Encriptar {
     margin-right: 0.5em;
     width: 332px;
   }
 
-  #desencriptar {
+  #Desencriptar {
     margin-left: 0.5em;
     width: 332px;
   }
@@ -219,10 +219,6 @@ footer {
     height: 550px;
     max-width: none;
     max-height: none;
-  }
-
-  .imagenMunieco {
-    display: none;
   }
 
   .cuadro {
@@ -242,7 +238,7 @@ footer {
     max-height: none;
   }
 
-  #textoIngresado {
+  #texto {
     width: 80%;
   }
 
@@ -256,12 +252,12 @@ footer {
     align-items: center;
   }
 
-  #encriptar {
+  #Encriptar {
     width: 343px;
     margin: 0;
   }
 
-  #desencriptar {
+  #Desencriptar {
     width: 343px;
     margin: 1.5em auto;
   }
@@ -272,11 +268,6 @@ footer {
     max-width: none;
     max-height: none;
   }
-
-  .imagenMunieco {
-    display: none;
-  }
-
   .cuadro {
     width: 327px;
     height: 186px;

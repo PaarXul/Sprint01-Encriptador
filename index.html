@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width = device-width, initial-scale=1.0">
+  <title>Challange Encriptador Alura</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <title>Challange Encriptador Alura</title>
 </head>
 
 <body>
@@ -16,44 +17,51 @@
       <div class="navegacion">
         <h1>Challange Encriptador</h1>
       </div>
-
     </nav>
   </header>
-  <div class="caja">
-    <main>
+
+  <main>
+    <div class="caja">
       <div class="mod-encriptador">
-        <div>
-          <textarea id="textoIngresado" cols="20" rows="7" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="advertencia">
+
+          <textarea type="text" id="texto" placeholder="Ingrese texto aquí" cols="20" rows="8" maxlength="750"
+            autofocus>
+          </textarea>
+
+          <div class="alerta"><span id="advertencia">&#9888</span>
+            <span>ingresar letras minúsculas y sin acentos</span>
+          </div>
+          <!--alerta -->
         </div>
-        <div class="alerta">
-          <span> ingresar letras minúsculas y sin acentos</span>
-        </div>
+        <!--advertencia -->
         <div class="boton">
-          <button id="encriptar">Encriptar</button>
-          <button id="desencriptar">Desencriptar</button>
+          <button id="Encriptar"> Encriptar</button>
+          <button id="Desencriptar">Desencriptar</button>
         </div>
+        <!--boton -->
       </div>
+      <!--mod-encriptador -->
       <div class="mod-resultado">
         <div class="cuadro">
-          <div class="cuadroVisto" id="visto">
-            <div class="imagenMunieco">
-
-            </div>
+          <div id="mensaje" class="mensaje">
             <div class="mensajeNoEncontrado">
               <p>Ningún mensaje fue encontrado</p>
             </div>
+            <!--mensajenoencontrado -->
             <div class="mensajeIngreseTexto">
               <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
+            <!--MensajeIngresaTexto -->
           </div>
-          <div class="cuadroOculto" id="oculto">
-            <textarea id="textoEncriptado" cols="20" rows="10" placeholder="Texto copiado!" readonly=""></textarea>
-            <button id="copiarTexto">Copiar</button>
-          </div>
+          <!--mensaje -->
         </div>
+        <!--cuadro -->
       </div>
-    </main>
-  </div>
+      <!--mod-resultado -->
+    </div>
+    <!--Caja -->
+  </main>
   <footer>
     <div class="copyright">
       <div class="footer-div">
