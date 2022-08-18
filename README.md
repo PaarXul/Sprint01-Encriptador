@@ -2,7 +2,7 @@
 #Create By PaarXul 
 #Challenge One Next Education Oracle y Alura Latam.
 
-## Construcción de un encriptador de texto con HTML, CSS y JS
+## Construcción de un encriptador de texto con HTML, CSS y JS:
 
 
 Aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
@@ -33,7 +33,7 @@ Por ejemplo:
 * Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del `ctrl+C` o de la opción “copiar” del menú de las aplicaciones.
 * Debe ser Resposivo para dispositivos como Desktop, Tablet and Phone.
 
-## Pasos a seguir para usar el encriptador
+## Pasos a seguir para usar el encriptador:
 
 1. Se ingresa el texto a encriptar.
 2. Se presiona el botón "Encriptar" para cifrar el mensaje.
