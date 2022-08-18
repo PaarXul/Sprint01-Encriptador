@@ -1,9 +1,15 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   font-family: "Verdana", sans-serif;
   background: #bed094;
   background: linear-gradient(90deg, #bed094, #be8a60, #2e2836);
   width: 100%;
-  height: inherit;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .caja {
@@ -59,7 +65,7 @@ main {
   font-family: "Verdana", sans-serif;
 }
 
-#texto::placeholder {
+::placeholder {
   color: #000000;
   font-family: "Verdana", sans-serif;
 }
@@ -168,19 +174,19 @@ button {
 }
 
 footer {
-  padding-top: 5px;
   text-align: center;
   width: 100%;
   background: #6a2e35;
-  position: -ms-device-fixed;
+  position: absolute;
+  bottom: 0;
 }
 .footer-div {
   width: 100%;
 }
 .copyright {
   display: inline-block;
-  height: 125px;
-  width: 99%;
+  height: 75px;
+  width: 100%;
 }
 
 .copyright p {
@@ -219,6 +225,7 @@ footer {
     height: 550px;
     max-width: none;
     max-height: none;
+    padding-bottom: 7em;
   }
 
   .cuadro {
@@ -229,8 +236,7 @@ footer {
     margin-top: 2em;
   }
 }
-
-@media only screen and (min-width: 380px) and (max-width: 767px) {
+@media only screen and (min-width: 360px) and (max-width: 767px) {
   .mod-encriptador {
     width: 100%;
     height: 500px;
@@ -267,6 +273,7 @@ footer {
     height: 500px;
     max-width: none;
     max-height: none;
+    padding-bottom: 7em;
   }
   .cuadro {
     width: 327px;
