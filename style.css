@@ -16,6 +16,10 @@ body {
   width: 100%;
 }
 
+a {
+  color: #cccccc;
+}
+
 header {
   text-align: center;
   width: auto;

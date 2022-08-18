@@ -1,10 +1,13 @@
+//* Se inicializa las variables de input trae el valor que trae el textarea y mensaje trae el valor que contiene el Div de mensaje
 let input = document.querySelector("#texto");
 let mensaje = document.querySelector("#mensaje");
 
+//*trae la acción a realizar de los botones de encriptar, desencriptar y copiar
 const encriptarTexto = document.querySelector("#Encriptar");
 const desencriptarTexto = document.querySelector("#Desencriptar");
 const copiarTexto = document.querySelector("#copias");
 
+//función que trae el valor obtenido del textarea, este pasa a convertir las mayúsculas a minúsculas, se recorre cada contenido del textarea y pasa a convertir cada carácter que sea (a,e,i,o,u).
 function encriptar() {
   let textoEntrada = input.value.toLowerCase();
   let nuevoTexto = "";
@@ -35,6 +38,7 @@ function encriptar() {
   obtenerMensaje(nuevoTexto);
 }
 
+//* Realiza la misma función que encriptar, con la diferencia que se utiliza la función replaceAll la cual reemplaza los caracteres exactos.
 function desencriptar() {
   let textoEntrada = input.value.toLowerCase();
 
@@ -56,6 +60,7 @@ function desencriptar() {
   obtenerMensaje(textoEntrada);
 }
 
+//* el valor obtenido de las funciones encriptar o desencriptar, pasa a ser enviado a la pantalla principal mediante el set de los valores que contiene DIV mensaje.
 function obtenerMensaje(nuevoTexto) {
   mensaje.textContent = "";
   let mensajeIngresado = document.createElement("textarea");
@@ -68,7 +73,7 @@ function obtenerMensaje(nuevoTexto) {
   mensaje.appendChild(mensajeIngresado);
   copiarMensaje(mensajeIngresado);
 }
-
+//* selecciona todo el valor contenido en el area del resultado obtenido de las función obtener mensaje y copia el contenido.
 function copiarMensaje(mensajeIngresado) {
   let copiar = document.createElement("button");
   copiar.classList.add("copiarTextoBtn");
@@ -82,5 +87,6 @@ function copiarMensaje(mensajeIngresado) {
   });
   mensaje.appendChild(copiar);
 }
+// Captura los eventos del botón encriptar y desencriptar para ejecutar las acciones de las funciones.
 encriptarTexto.addEventListener("click", encriptar);
 desencriptarTexto.addEventListener("click", desencriptar);
