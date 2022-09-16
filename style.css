@@ -246,6 +246,7 @@ footer {
     height: 500px;
     max-width: none;
     max-height: none;
+    margin-bottom: 2em;
   }
 
   #texto {

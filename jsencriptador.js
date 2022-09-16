@@ -90,3 +90,23 @@ function copiarMensaje(mensajeIngresado) {
 // Captura los eventos del botón encriptar y desencriptar para ejecutar las acciones de las funciones.
 encriptarTexto.addEventListener("click", encriptar);
 desencriptarTexto.addEventListener("click", desencriptar);
+
+
+function soloLetras(e) {
+  var key = e.keyCode || e.which,
+    tecla = String.fromCharCode(key).toLowerCase(),
+    letras = " abcdefghijklmnñopqrstuvwxyz",
+    especiales = [8, 37, 39, 46],
+    tecla_especial = false;
+
+  for (var i in especiales) {
+    if (key == especiales[i]) {
+      tecla_especial = true;
+      break;
+    }
+  }
+
+  if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+    return false;
+  }
+}
